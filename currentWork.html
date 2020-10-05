@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+        <body style="background-color:lightgray;">
+        <link href= "currentWork.css" rel="stylesheet" type="text/css">
+        <link href= "LoginAndLogout.css" rel="stylesheet" type="text/css">
+
+      <head>
+      <style>
+      table, th, td
+      {
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      </style>
+      </head>
+
+      <body>
+
+        <title>Current Work</title>
+        <body>
+            <div class="navbar">
+              <a href="aboutJoshua.html">About Joshua Rymkiewicz</a>
+              <a href="currentWork.html">Current Work</a>
+              <div class="dropdown">
+                <button class="dropbtn">Proud Work and Produced 2017-2021
+                  <i class="fa fa-caret-down"></i>
+                </button>
+              </div>
+            </div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+
+            </body>
+        </body>
+
+
+        <div class="workLogo">
+            <img src="viecure.jpg" alt="professional Picture" width="275"height="275">
+        </div>
+        <div>
+            <h2>Viecure Internship: (Decemeber 2019 - )</h2>
+            <h3>Work Skills Learned: </h3>
+              <div class="v-skills">
+                      <p>I. Created Viecure Onboarding Processs</p>
+                      <p>II. Head of Projects</p>
+                      <p> III. In charge of the Uber App Integration</p>
+                      <p>IV. Testing and Logging bugs within enviroments</p>
+                      <p>V. Fixing Bugs and Implimenting new functions</p>
+                </div>
+        </div>
+        <div class="tg-logo" style="top:450px">
+            <img src="top-golf.png" alt="Top-golf Picture" width="275"height="275">
+        </div>
+        <div class="TG-work" style="top:150px">
+            <h2>Topgolf:  (May 2015 - 2017)</h2>
+            <h3>Work Skills Learned: </h3>
+            <div class= "TG-skills">
+                      <p>I. Connections to the customers and host company events</p>
+                      <p>II. At a young age to improve Customer Service</p>
+                      <p> III. THe ability to be responsible for others/p>
+            </div>
+
+        </div>
+
+        <div class="contactInfo">
+            <p> Contact Information: <p>
+              <p> Email: <a href = "mailto: joshrymkiewicz@yahoo.com">joshrymkiewicz@yahoo.com</a> Phone Number: 303-717-3913
+              <a href="https://www.linkedin.com/in/joshuarymkiewicz/"> My LinkedIn</a></p>
+          </div>
+</html>
